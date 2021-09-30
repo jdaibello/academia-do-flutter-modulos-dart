@@ -3,5 +3,8 @@
     {
       "path": "./dart-fundamentos"
     },
-  ],
+    {
+      "path": "dart-funcoes-colecoes"
+    }
+  ]
 }
