@@ -4,7 +4,10 @@
       "path": "./dart-fundamentos"
     },
     {
-      "path": "dart-funcoes-colecoes"
+      "path": "./dart-funcoes-colecoes"
+    },
+    {
+      "path": "./dart_poo"
     }
   ]
 }
