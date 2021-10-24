@@ -11,6 +11,9 @@
     },
     {
       "path": "./dart_async"
+    },
+    {
+      "path": "./dart_banco_dados"
     }
   ]
 }
