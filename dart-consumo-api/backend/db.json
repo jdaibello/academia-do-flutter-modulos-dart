@@ -1,0 +1,74 @@
+{
+	"alunos": [
+		{
+			"id": "1",
+			"nome": "João Pedro",
+			"idade": 32,
+			"nomeCursos": [
+				"Academia do Flutter",
+				"Imersão GetX"
+			],
+			"cursos": [
+				{
+					"id": 1,
+					"nome": "Academia do Flutter",
+					"isAluno": true
+				},
+				{
+					"id": 2,
+					"nome": "Imersão GetX",
+					"isAluno": true
+				}
+			],
+			"telefone": {
+				"ddd": 11,
+				"numero": "1234-5678"
+			},
+			"endereco": {
+				"rua": "Rua X",
+				"numero": 100,
+				"complemento": null,
+				"CEP": "01234-567",
+				"cidade": {
+					"id": 1,
+					"nome": "São Paulo"
+				}
+			}
+		},
+		{
+			"id": "2",
+			"nome": "João Zinho",
+			"idade": 20,
+			"nomeCursos": [
+				"Academia do Flutter",
+				"Imersão GetX"
+			],
+			"cursos": [
+				{
+					"id": 1,
+					"nome": "Academia do Flutter",
+					"isAluno": true
+				},
+				{
+					"id": 2,
+					"nome": "Imersão GetX",
+					"isAluno": false
+				}
+			],
+			"telefone": {
+				"ddd": 11,
+				"numero": "2345-6789"
+			},
+			"endereco": {
+				"rua": "Rua Z",
+				"numero": 110,
+				"complemento": "1A",
+				"CEP": "12345-678",
+				"cidade": {
+					"id": 1,
+					"nome": "São Paulo"
+				}
+			}
+		}
+	]
+}
