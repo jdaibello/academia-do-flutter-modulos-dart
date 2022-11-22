@@ -1,0 +1,26 @@
+{
+	"nome": "João Pedro",
+	"idade": 32,
+	"nomeCursos": ["Academia do Flutter", "Imersão GetX"],
+	"cursos": [
+		{
+			"id": 1,
+			"nome": "Academia do Flutter",
+			"isAluno": true
+		},
+		{
+			"id": 2,
+			"nome": "Imersão GetX",
+			"isAluno": true
+		}
+	],
+	"telefone": {
+		"ddd": 11,
+		"numero": "1234-5678"
+	},
+	"endereco": {
+		"rua": "Rua X",
+		"numero": 100,
+		"CEP": "01234-567"
+	}
+}
