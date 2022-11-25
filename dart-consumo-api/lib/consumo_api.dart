@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:dart_consumo_api/models/telefone.dart';
+
 void main() {
   final cidadeJson =
       '''
@@ -40,4 +42,20 @@ void main() {
 
   // [{"id":123,"nome":"Santo André","uf":"SP"}]
   print(json.encode([cidadeMapJson]));
+
+  final telefoneJson =
+      '''
+        {
+          "ddd": 11,
+          "numero": "1234-5678"
+        }
+      ''';
+
+  final telefone = Telefone.fromJson(telefoneJson);
+
+  print(telefone.ddd);
+  print(telefone.numero);
+
+  print(telefone.toJson());
+  print(telefone.toMap());
 }
