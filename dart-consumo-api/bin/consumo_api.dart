@@ -1,14 +1,18 @@
 import 'dart:convert';
 
 import 'package:dart_consumo_api/controller/alunos_controller.dart';
+import 'package:dart_consumo_api/controller/filmes_controller.dart';
 import 'package:dart_consumo_api/models/telefone.dart';
 
 Future<void> main() async {
-  await AlunosController().findAll();
+  // await AlunosController().findAll();
   await AlunosController().findById('1');
-  await AlunosController().update();
-  await AlunosController().insert();
-  await AlunosController().findById('4c30c330-6f59-11ed-b9da-0be8c15ddad7');
+  // await AlunosController().update();
+  // await AlunosController().insert();
+  // await AlunosController().findById('4c30c330-6f59-11ed-b9da-0be8c15ddad7');
+
+  await FilmesController().findAll();
+  await FilmesController().findById('634649');
 }
 
 void main2() {
