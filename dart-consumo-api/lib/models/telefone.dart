@@ -32,4 +32,7 @@ class Telefone {
   //   Map<String, dynamic> jsonMap = jsonDecode(json);
   //   return Telefone.fromMap(jsonMap);
   // }
+
+  @override
+  String toString() => 'Telefone(ddd: $ddd, numero: $numero)';
 }

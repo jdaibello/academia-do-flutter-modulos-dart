@@ -40,4 +40,9 @@ class Endereco {
   String toJson() => jsonEncode(toMap());
 
   factory Endereco.fromJson(String json) => Endereco.fromMap(jsonDecode(json));
+
+  @override
+  String toString() {
+    return 'Endereco(rua: $rua, numero: $numero, cep: $cep, complemento: $complemento, cidade: $cidade)';
+  }
 }

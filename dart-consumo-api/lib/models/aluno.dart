@@ -5,7 +5,7 @@ import 'package:dart_consumo_api/models/endereco.dart';
 import 'package:dart_consumo_api/models/telefone.dart';
 
 class Aluno {
-  final String id;
+  final String? id;
   final String nome;
   final int? idade;
   final List<String> nomeCursos;
@@ -14,7 +14,7 @@ class Aluno {
   final List<Curso> cursos;
 
   Aluno({
-    required this.id,
+    this.id,
     required this.nome,
     this.idade,
     required this.nomeCursos,
@@ -37,10 +37,11 @@ class Aluno {
 
   factory Aluno.fromMap(Map<String, dynamic> map) {
     return Aluno(
-      id: map['id'] ?? '',
+      id: map['id'],
       nome: map['nome'] ?? '',
       idade: map['idade'],
-      nomeCursos: map['nomeCursos'],
+      //nomeCursos: List<String>.from(map['nomeCursos']),
+      nomeCursos: map['nomeCursos'].cast<String>(),
       telefone: Telefone.fromMap(map['telefone']),
       endereco: Endereco.fromMap(map['endereco']),
       cursos: map['cursos']
@@ -52,4 +53,9 @@ class Aluno {
   String toJson() => jsonEncode(toMap());
 
   factory Aluno.fromJson(String json) => Aluno.fromMap(jsonDecode(json));
+
+  @override
+  String toString() {
+    return 'Aluno(id: $id, nome: $nome, idade: $idade, nomeCursos: $nomeCursos, telefone: $telefone, endereco: $endereco, cursos: $cursos)';
+  }
 }
